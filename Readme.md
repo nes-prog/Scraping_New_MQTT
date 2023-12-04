@@ -61,12 +61,6 @@
 The project revolves around scraping news and ingesting them into mongodb, via mosquitto Pub/Sub.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 * MongoDb
 * Mosquitto
