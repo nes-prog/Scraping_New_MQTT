@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.common.keys import Keys 
  #initialize chromedriver for scraping
-DRIVER_PATH = 'C:/Users/Lenovo/Desktop/human_dog_detection/chromedriver.exe'
+DRIVER_PATH = 'chromedriver.exe'
 GOOGLE_news = 'https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtWnlHZ0pHVWlnQVAB?hl=fr&gl=FR&ceid=FR%3Afr'
 
 def scrape():
