@@ -7,9 +7,10 @@ DRIVER_PATH = 'C:/Users/Lenovo/Desktop/human_dog_detection/chromedriver.exe'
 GOOGLE_news = 'https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtWnlHZ0pHVWlnQVAB?hl=fr&gl=FR&ceid=FR%3Afr'
 
 def scrape():
-    ""
-    # enter to google.com
+    "Scrape News from the google news url"
+    # initialize webdriver
     driver = webdriver.Chrome(DRIVER_PATH)
+    # get the url for scraping
     driver.get(GOOGLE_news)
     sleep(2)
     button = driver.find_element(By.XPATH, '/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[1]/div/div/button')

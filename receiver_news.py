@@ -5,7 +5,7 @@ import pymongo
 
 #create database
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["QR"]
+mydb = myclient["database_news"]
 #create collection 
 mycol = mydb["News"]
 
@@ -20,8 +20,7 @@ def on_connect(rc):
 
 
 def on_message(client, userdata, message):
-    ""
-    print(type(ast.literal_eval(message.payload.decode("utf-8"))))
+    # inject data into mongo db 
     x = mycol.insert_one(ast.literal_eval(message.payload.decode("utf-8")))
     print("message received " ,str(message.payload.decode("utf-8")))
     print("message topic=",message.topic)

@@ -58,7 +58,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-the project revolves around scraping news and ingesting them into mongodb, via mosquitto Pub/Sub.
+The project revolves around scraping news and ingesting them into mongodb, via mosquitto Pub/Sub.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
